@@ -1,0 +1,272 @@
+
+[
+    {
+      "name": "infectious diseases",
+      "diseases": [
+        {
+          "name": "influenza",
+          "description": "Influenza is a viral infection that attacks the respiratory system.",
+          "transmission": "Airborne droplets when an infected person coughs, sneezes, or talks.",
+          "symptoms": "Fever, chills, muscle aches, cough, congestion, runny nose, headaches, and fatigue.",
+          "treatment": "Antiviral medications, rest, hydration, and over-the-counter medications for symptom relief."
+        },
+        {
+          "name": "covid-19",
+          "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus.",
+          "transmission": "Spread through respiratory droplets and contact with contaminated surfaces.",
+          "symptoms": "Fever, cough, difficulty breathing, fatigue, and loss of taste or smell.",
+          "treatment": "Supportive care, oxygen therapy, and antiviral medications in severe cases."
+        },
+        {
+          "name": "tuberculosis",
+          "description": "Tuberculosis (TB) is a potentially serious infectious disease that mainly affects the lungs.",
+          "transmission": "Airborne when an infected person coughs or sneezes.",
+          "symptoms": "Coughing that lasts three or more weeks, coughing up blood, chest pain, and unintentional weight loss.",
+          "treatment": "Long-term antibiotics treatment, typically for 6-9 months."
+        },
+        {
+          "name": "hepatitis B",
+          "description": "Hepatitis B is a serious liver infection caused by the hepatitis B virus (HBV).",
+          "transmission": "Contact with infectious body fluids, such as blood and semen.",
+          "symptoms": "Yellowing of the eyes, abdominal pain, and dark urine.",
+          "treatment": "Antiviral medications, liver transplant in severe cases."
+        },
+        {
+          "name": "malaria",
+          "description": "Malaria is a disease caused by a plasmodium parasite, transmitted by the bite of infected mosquitoes.",
+          "transmission": "Bites from Anopheles mosquitoes.",
+          "symptoms": "Fever, chills, and flu-like illness.",
+          "treatment": "Antimalarial medications."
+        },
+        {
+          "name": "measles",
+          "description": "Measles is a highly contagious viral disease.",
+          "transmission": "Airborne droplets from coughs and sneezes of infected individuals.",
+          "symptoms": "Fever, dry cough, runny nose, inflamed eyes, sore throat, and a red, blotchy skin rash.",
+          "treatment": "Supportive care including rest, fluids, and pain relievers."
+        },
+        {
+          "name": "chickenpox",
+          "description": "Chickenpox is a viral infection that causes an itchy rash with small, fluid-filled blisters.",
+          "transmission": "Direct contact with the rash or through airborne transmission of respiratory droplets.",
+          "symptoms": "Itchy rash, fever, tiredness, and loss of appetite.",
+          "treatment": "Antiviral medication, calamine lotion, and oatmeal baths to relieve itching."
+        },
+        {
+          "name": "mumps",
+          "description": "Mumps is a viral infection that affects the salivary glands.",
+          "transmission": "Spread through infected saliva.",
+          "symptoms": "Swollen salivary glands, fever, headache, muscle aches, and fatigue.",
+          "treatment": "Supportive care including rest, fluids, and pain relievers."
+        },
+        {
+          "name": "rubella",
+          "description": "Rubella is a contagious viral infection best known by its distinctive red rash.",
+          "transmission": "Airborne droplets from coughs and sneezes of infected individuals.",
+          "symptoms": "Mild fever, headache, red eyes, and a fine, pink rash.",
+          "treatment": "Supportive care including rest, fluids, and pain relievers."
+        },
+        {
+          "name": "dengue fever",
+          "description": "Dengue fever is a mosquito-borne tropical disease caused by the dengue virus.",
+          "transmission": "Bites from Aedes mosquitoes.",
+          "symptoms": "High fever, headache, vomiting, muscle and joint pains, and a characteristic skin rash.",
+          "treatment": "Supportive care including rest, fluids, and pain relievers."
+        },
+        {
+          "name": "zika virus",
+          "description": "Zika virus is a mosquito-borne viral infection.",
+          "transmission": "Bites from Aedes mosquitoes, mother-to-child, sexual contact, and blood transfusions.",
+          "symptoms": "Mild fever, rash, conjunctivitis, muscle and joint pain, malaise, and headache.",
+          "treatment": "Supportive care including rest, fluids, and pain relievers."
+        },
+        {
+          "name": "ebola",
+          "description": "Ebola virus disease is a severe, often fatal illness in humans.",
+          "transmission": "Contact with blood, secretions, organs, or other bodily fluids of infected animals or humans.",
+          "symptoms": "Fever, severe headache, muscle pain, weakness, fatigue, diarrhea, vomiting, abdominal pain, and unexplained hemorrhaging.",
+          "treatment": "Supportive care including fluids and electrolytes, oxygen therapy, and medications to support blood pressure, reduce vomiting and diarrhea, and manage fever and pain."
+        },
+        {
+          "name": "hiv",
+          "description": "HIV is a virus that attacks the immune system, and AIDS is the final stage of HIV infection.",
+          "transmission": "Contact with infected blood, semen, vaginal fluids, and breast milk.",
+          "symptoms": "Fever, chills, rash, night sweats, muscle aches, sore throat, fatigue, swollen lymph nodes, and mouth ulcers.",
+          "treatment": "Antiretroviral therapy (ART) to control the virus."
+        },
+        {
+          "name": "aids",
+          "description": "HIV is a virus that attacks the immune system, and AIDS is the final stage of HIV infection.",
+          "transmission": "Contact with infected blood, semen, vaginal fluids, and breast milk.",
+          "symptoms": "Fever, chills, rash, night sweats, muscle aches, sore throat, fatigue, swollen lymph nodes, and mouth ulcers.",
+          "treatment": "Antiretroviral therapy (ART) to control the virus."
+        },
+        {
+          "name": "cholera",
+          "description": "Cholera is an infectious disease that causes severe watery diarrhea.",
+          "transmission": "Ingesting contaminated food or water.",
+          "symptoms": "Severe watery diarrhea, vomiting, and leg cramps.",
+          "treatment": "Rehydration solutions, intravenous fluids, and antibiotics in severe cases."
+        },
+        {
+          "name": "typhoid fever",
+          "description": "Typhoid fever is a bacterial infection that can spread throughout the body.",
+          "transmission": "Ingesting contaminated food or water.",
+          "symptoms": "Prolonged fever, fatigue, headache, nausea, abdominal pain, and constipation or diarrhea.",
+          "treatment": "Antibiotics and supportive care including fluids and rest."
+        },
+        {
+          "name": "plague",
+          "description": "Plague is a bacterial infection found in rodents and their fleas.",
+          "transmission": "Bites from infected fleas, contact with contaminated fluid or tissue, and inhalation of respiratory droplets from infected individuals.",
+          "symptoms": "Fever, headache, chills, weakness, and swollen, painful lymph nodes.",
+          "treatment": "Antibiotics and supportive care."
+        }
+      ]
+    },
+    {
+      "name": "chronic diseases",
+      "diseases": [
+        {
+          "name": "diabetes",
+          "description": "Diabetes is a disease that occurs when your blood glucose is too high.",
+          "transmission": "Not transmissible; influenced by genetics, lifestyle, and environment.",
+          "symptoms": "Increased thirst, frequent urination, extreme hunger, and fatigue.",
+          "treatment": "Insulin therapy, oral medications, lifestyle changes, and monitoring blood sugar levels."
+        },
+        {
+          "name": "hypertension",
+          "description": "Hypertension, or high blood pressure, is a condition in which the force of the blood against the artery walls is too high.",
+          "transmission": "Not transmissible; influenced by lifestyle and genetics.",
+          "symptoms": "Often asymptomatic; can include headaches, shortness of breath, or nosebleeds.",
+          "treatment": "Medications, dietary changes, exercise, and stress management."
+        },
+        {
+          "name": "asthma",
+          "description": "Asthma is a condition in which your airways narrow and swell and may produce extra mucus.",
+          "transmission": "Not transmissible; triggered by environmental factors and genetics.",
+          "symptoms": "Shortness of breath, chest tightness, wheezing, and coughing.",
+          "treatment": "Inhalers, long-term asthma control medications, and avoiding triggers."
+        },
+        {
+          "name": "heart disease",
+          "description": "Heart disease describes a range of conditions that affect your heart, including coronary artery disease, arrhythmias, and congenital heart defects.",
+          "transmission": "Not transmissible; influenced by lifestyle and genetics.",
+          "symptoms": "Chest pain, shortness of breath, and pain, numbness, weakness or coldness in your legs or arms.",
+          "treatment": "Lifestyle changes, medications, and surgical procedures."
+        },
+        {
+          "name": "chronic kidney disease",
+          "description": "Chronic kidney disease involves a gradual loss of kidney function.",
+          "transmission": "Not transmissible; influenced by diabetes, high blood pressure, and other risk factors.",
+          "symptoms": "Nausea, vomiting, loss of appetite, fatigue, and changes in urine output.",
+          "treatment": "Medications, lifestyle changes, dialysis, or kidney transplant."
+        },
+        {
+          "name": "arthritis",
+          "description": "Arthritis is inflammation of one or more of your joints.",
+          "transmission": "Not transmissible; influenced by age, genetics, and lifestyle.",
+          "symptoms": "Joint pain, stiffness, swelling, and decreased range of motion.",
+          "treatment": "Medications, physical therapy, and sometimes surgery."
+        },
+        {
+          "name": "chronic obstructive pulmonary disease (COPD)",
+          "description": "COPD is a chronic inflammatory lung disease that causes obstructed airflow from the lungs.",
+          "transmission": "Not transmissible; primarily caused by long-term exposure to irritating gases or particulate matter, most often from cigarette smoke.",
+          "symptoms": "Breathing difficulty, cough, mucus production, and wheezing.",
+          "treatment": "Inhalers, medications, pulmonary rehabilitation, and oxygen therapy."
+        },
+        {
+          "name": "osteoporosis",
+          "description": "Osteoporosis is a disease where decreased bone strength increases the risk of a broken bone.",
+          "transmission": "Not transmissible; influenced by age, genetics, and lifestyle.",
+          "symptoms": "Bone fractures, loss of height, back pain, and a hunched posture.",
+          "treatment": "Medications, calcium and vitamin D supplements, and lifestyle changes."
+        },
+        {
+          "name": "alzheimers disease",
+          "description": "Alzheimer's disease is a progressive disorder that causes brain cells to waste away (degenerate) and die.",
+          "transmission": "Not transmissible; influenced by genetics, age, and other risk factors.",
+          "symptoms": "Memory loss, confusion, difficulty with thinking and understanding, and changes in behavior.",
+          "treatment": "Medications, cognitive therapies, and supportive care."
+        },
+        {
+          "name": "parkinsons disease",
+          "description": "Parkinson's disease is a progressive nervous system disorder that affects movement.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Tremors, stiffness, slow movement, and balance problems.",
+          "treatment": "Medications, physical therapy, and sometimes surgery."
+        },
+        {
+          "name": "multiple sclerosis",
+          "description": "Multiple sclerosis (MS) is a disease in which the immune system eats away at the protective covering of nerves.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Fatigue, difficulty walking, numbness or tingling, muscle weakness, and vision problems.",
+          "treatment": "Medications, physical therapy, and lifestyle changes."
+        },
+        {
+          "name": "epilepsy",
+          "description": "Epilepsy is a central nervous system disorder in which brain activity becomes abnormal, causing seizures.",
+          "transmission": "Not transmissible; influenced by genetics, head trauma, and other factors.",
+          "symptoms": "Seizures, temporary confusion, staring spells, and uncontrollable jerking movements.",
+          "treatment": "Medications, surgery, and sometimes dietary changes."
+        },
+        {
+          "name": "lupus",
+          "description": "Lupus is a systemic autoimmune disease that occurs when your body's immune system attacks your own tissues and organs.",
+          "transmission": "Not transmissible; influenced by genetics, hormones, and environmental factors.",
+          "symptoms": "Fatigue, joint pain, skin rashes, and fever.",
+          "treatment": "Medications, lifestyle changes, and supportive care."
+        },
+        {
+          "name": "crohns disease",
+          "description": "Crohn's disease is a type of inflammatory bowel disease (IBD) that can affect any part of the gastrointestinal tract.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Diarrhea, abdominal pain, weight loss, anemia, and fatigue.",
+          "treatment": "Medications, dietary changes, and sometimes surgery."
+        },
+        {
+          "name": "ulcerative colitis",
+          "description": "Ulcerative colitis is a chronic inflammatory bowel disease (IBD) that causes inflammation and ulcers in the digestive tract.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Diarrhea, abdominal pain, rectal bleeding, and weight loss.",
+          "treatment": "Medications, dietary changes, and sometimes surgery."
+        },
+        {
+          "name": "celiac disease",
+          "description": "Celiac disease is an immune reaction to eating gluten, a protein found in wheat, barley, and rye.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Diarrhea, bloating, gas, fatigue, and anemia.",
+          "treatment": "A strict gluten-free diet."
+        },
+        {
+          "name": "sickle cell disease",
+          "description": "Sickle cell disease is a group of inherited red blood cell disorders.",
+          "transmission": "Genetic inheritance.",
+          "symptoms": "Anemia, episodes of pain, swelling of hands and feet, frequent infections, and delayed growth.",
+          "treatment": "Medications, blood transfusions, and sometimes bone marrow transplant."
+        },
+        {
+          "name": "hemophilia",
+          "description": "Hemophilia is a rare disorder in which your blood doesn't clot normally because it lacks sufficient blood-clotting proteins.",
+          "transmission": "Genetic inheritance.",
+          "symptoms": "Excessive bleeding, easy bruising, and joint pain.",
+          "treatment": "Replacement therapy with clotting factor concentrates."
+        },
+        {
+          "name": "anemia",
+          "description": "Anemia is a condition in which you lack enough healthy red blood cells to carry adequate oxygen to your body's tissues.",
+          "transmission": "Not transmissible; caused by a variety of factors including nutritional deficiencies and chronic diseases.",
+          "symptoms": "Fatigue, weakness, pale skin, and shortness of breath.",
+          "treatment": "Dietary changes, supplements, medications, and sometimes blood transfusions."
+        },
+        {
+          "name": "psoriasis",
+          "description": "Psoriasis is a skin disease that causes red, itchy scaly patches, most commonly on the knees, elbows, trunk, and scalp.",
+          "transmission": "Not transmissible; influenced by genetics and environmental factors.",
+          "symptoms": "Red patches of skin covered with thick, silvery scales, dry, cracked skin that may bleed, and itching or burning.",
+          "treatment": "Topical treatments, phototherapy, and systemic medications."
+        }
+      ]
+    }
+  ]
