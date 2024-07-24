@@ -62,7 +62,7 @@ Additional Information:
 """
 
 
-user_input = input("Enter your queries:").strip()
+user_input = input("Enter your queries:").strip().lower()
 prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_input}'"
 
 reply = generate_extract_disease_name(prompt)

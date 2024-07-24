@@ -1,6 +1,6 @@
-1. Create an elaborate database
+1. Create an elaborate database 
 2. Provide options for users to enter their queries
 3. return formatted responses for the disease 
-4. integrate and llm (gemini) for more elaborate answers
+4. integrate an llm (gemini) for more elaborate answers
 5. create a ui
 6. deploy
