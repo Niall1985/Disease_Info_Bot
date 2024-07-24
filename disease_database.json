@@ -1,0 +1,379 @@
+[
+    {
+        "name": "chronic diseases",
+        "diseases": [
+        {
+            "name": "diabetes",
+            "description": "Diabetes is a disease that occurs when your blood glucose is too high. It can lead to serious complications such as heart disease, kidney failure, and nerve damage if not managed properly.",
+            "transmission": "Not transmissible; influenced by genetics, lifestyle, and environment. Type 1 diabetes is an autoimmune condition, while Type 2 diabetes is often related to lifestyle factors.",
+            "symptoms": "Increased thirst, frequent urination, extreme hunger, fatigue, blurred vision, and slow-healing sores.",
+            "treatment": "Insulin therapy, oral medications, lifestyle changes (diet and exercise), and monitoring blood sugar levels. Continuous glucose monitoring (CGM) and insulin pumps may also be used.",
+            "complications": "Heart disease, stroke, kidney damage, neuropathy, retinopathy, and foot problems.",
+            "prevention": "Maintaining a healthy weight, regular physical activity, balanced diet, and regular monitoring of blood glucose levels."
+        },
+        {
+            "name": "hypertension",
+            "description": "Hypertension, or high blood pressure, is a condition in which the force of the blood against the artery walls is too high, potentially leading to heart disease and stroke.",
+            "transmission": "Not transmissible; influenced by lifestyle, genetics, and other conditions such as diabetes.",
+            "symptoms": "Often asymptomatic; can include headaches, shortness of breath, nosebleeds, and dizziness in severe cases.",
+            "treatment": "Medications such as diuretics, ACE inhibitors, and beta-blockers, along with lifestyle changes including dietary modifications, regular exercise, and stress management.",
+            "complications": "Heart disease, stroke, kidney damage, and vision loss.",
+            "prevention": "Maintaining a healthy weight, regular physical activity, reducing salt intake, and avoiding excessive alcohol consumption."
+        },
+        {
+            "name": "asthma",
+            "description": "Asthma is a chronic condition in which your airways narrow and swell, and may produce extra mucus, making it difficult to breathe.",
+            "transmission": "Not transmissible; triggered by environmental factors such as allergens, air pollution, and respiratory infections.",
+            "symptoms": "Shortness of breath, chest tightness, wheezing, coughing, especially at night or early in the morning.",
+            "treatment": "Inhalers (bronchodilators and corticosteroids), long-term control medications, and avoiding known triggers. Allergy testing and immunotherapy may also be considered.",
+            "complications": "Severe asthma attacks leading to hospitalizations or difficulty in breathing.",
+            "prevention": "Avoiding allergens, regular use of prescribed medications, and managing environmental factors such as air pollution."
+        },
+        {
+            "name": "heart disease",
+            "description": "Heart disease encompasses a range of conditions affecting the heart, including coronary artery disease, arrhythmias, and congenital heart defects. It is a leading cause of death globally.",
+            "transmission": "Not transmissible; influenced by lifestyle, genetics, and other health conditions like hypertension and diabetes.",
+            "symptoms": "Chest pain, shortness of breath, pain, numbness, weakness or coldness in your legs or arms, and irregular heartbeat.",
+            "treatment": "Lifestyle changes (diet and exercise), medications (e.g., statins, beta-blockers), and surgical procedures (e.g., angioplasty, bypass surgery). Cardiac rehabilitation may also be recommended.",
+            "complications": "Heart attack, stroke, heart failure, and sudden cardiac death.",
+            "prevention": "Healthy diet, regular exercise, avoiding tobacco, and managing stress and chronic conditions."
+        },
+        {
+            "name": "chronic kidney disease",
+            "description": "Chronic kidney disease (CKD) involves a gradual loss of kidney function, which can lead to kidney failure. It often progresses silently and can have serious consequences.",
+            "transmission": "Not transmissible; influenced by diabetes, high blood pressure, and other risk factors such as smoking and obesity.",
+            "symptoms": "Nausea, vomiting, loss of appetite, fatigue, changes in urine output, swelling in legs or ankles, and confusion.",
+            "treatment": "Medications to control blood pressure and other symptoms, lifestyle changes (diet and exercise), dialysis, or kidney transplant in advanced stages.",
+            "complications": "Kidney failure, cardiovascular disease, anemia, and bone disease.",
+            "prevention": "Managing chronic conditions, maintaining a healthy lifestyle, and regular screening for kidney function in at-risk individuals."
+        },
+        {
+            "name": "arthritis",
+            "description": "Arthritis is an umbrella term for a group of more than 100 diseases that affect the joints, causing inflammation and pain. It can lead to joint damage and disability.",
+            "transmission": "Not transmissible; influenced by age, genetics, and lifestyle factors. Some types, like rheumatoid arthritis, are autoimmune in nature.",
+            "symptoms": "Joint pain, stiffness, swelling, decreased range of motion, and sometimes systemic symptoms like fatigue.",
+            "treatment": "Medications (NSAIDs, disease-modifying antirheumatic drugs), physical therapy, and sometimes surgery to repair or replace damaged joints.",
+            "complications": "Joint damage, disability, and impaired quality of life.",
+            "prevention": "Maintaining a healthy weight, regular exercise, and early treatment to manage symptoms."
+        },
+        {
+            "name": "chronic obstructive pulmonary disease (COPD)",
+            "description": "COPD is a group of progressive lung diseases that block airflow and make breathing difficult. It includes emphysema and chronic bronchitis.",
+            "transmission": "Not transmissible; primarily caused by long-term exposure to irritating gases or particulate matter, especially from cigarette smoke.",
+            "symptoms": "Breathing difficulty, chronic cough, mucus production, and wheezing. Symptoms worsen over time and can impact daily activities.",
+            "treatment": "Inhalers (bronchodilators and corticosteroids), medications, pulmonary rehabilitation, oxygen therapy, and lifestyle changes like quitting smoking.",
+            "complications": "Respiratory infections, heart problems, and lung cancer.",
+            "prevention": "Avoiding smoking and exposure to secondhand smoke, regular check-ups, and vaccination against respiratory infections."
+        },
+        {
+            "name": "osteoporosis",
+            "description": "Osteoporosis is a condition characterized by decreased bone strength, leading to fragile bones that are more susceptible to fractures.",
+            "transmission": "Not transmissible; influenced by age, genetics, lifestyle factors (e.g., smoking, excessive alcohol consumption), and hormonal changes.",
+            "symptoms": "Bone fractures, loss of height, back pain, and a hunched posture. Often asymptomatic until a fracture occurs.",
+            "treatment": "Medications (bisphosphonates, hormone therapy), calcium and vitamin D supplements, weight-bearing exercises, and lifestyle modifications.",
+            "complications": "Increased risk of fractures, loss of mobility, and decreased quality of life.",
+            "prevention": "Adequate calcium and vitamin D intake, regular weight-bearing exercise, and avoiding risk factors such as smoking and excessive alcohol consumption."
+        },
+        {
+            "name": "alzheimers disease",
+            "description": "Alzheimer's disease is a progressive neurodegenerative disorder that causes memory loss, cognitive decline, and behavioral changes.",
+            "transmission": "Not transmissible; influenced by age, genetics, and other risk factors such as cardiovascular disease.",
+            "symptoms": "Memory loss, confusion, difficulty with thinking and understanding, disorientation, and changes in behavior and personality.",
+            "treatment": "Medications to manage symptoms (e.g., cholinesterase inhibitors), cognitive therapies, and supportive care to improve quality of life.",
+            "complications": "Severe cognitive impairment, loss of independence, and increased susceptibility to infections.",
+            "prevention": "Healthy lifestyle choices, mental and physical stimulation, and managing cardiovascular risk factors."
+        },
+        {
+            "name": "parkinsons disease",
+            "description": "Parkinson's disease is a progressive disorder that affects movement, leading to tremors, rigidity, and bradykinesia (slowness of movement).",
+            "transmission": "Not transmissible; influenced by genetics and environmental factors. The exact cause is unknown.",
+            "symptoms": "Tremors, stiffness, slow movement, balance problems, and changes in facial expression.",
+            "treatment": "Medications (e.g., levodopa), physical therapy, occupational therapy, and sometimes surgical interventions such as deep brain stimulation.",
+            "complications": "Motor symptoms worsening over time, cognitive decline, and difficulty with daily activities.",
+            "prevention": "There is no known prevention, but early diagnosis and treatment can help manage symptoms and improve quality of life."
+        },
+        {
+            "name": "multiple sclerosis",
+            "description": "Multiple sclerosis (MS) is a chronic illness where the immune system attacks the protective covering of nerve fibers, leading to inflammation and scarring.",
+            "transmission": "Not transmissible; influenced by genetics, environmental factors, and possibly autoimmune mechanisms.",
+            "symptoms": "Fatigue, difficulty walking, numbness or tingling in limbs, muscle weakness, vision problems, and problems with coordination and balance.",
+            "treatment": "Medications to modify the course of the disease, manage symptoms, and improve quality of life. Physical therapy and lifestyle modifications are also recommended.",
+            "complications": "Disability, cognitive decline, and complications related to immobility.",
+            "prevention": "There is no known prevention, but early diagnosis and treatment can help manage symptoms and slow progression."
+        },
+        {
+            "name": "epilepsy",
+            "description": "Epilepsy is a neurological disorder characterized by recurrent, unprovoked seizures. It affects brain activity and can vary in severity.",
+            "transmission": "Not transmissible; influenced by genetic factors, head trauma, stroke, infections, and other brain injuries.",
+            "symptoms": "Seizures, temporary confusion, staring spells, uncontrollable jerking movements, and loss of consciousness in severe cases.",
+            "treatment": "Medications to control seizures, surgery for refractory cases, and sometimes dietary changes (e.g., ketogenic diet).",
+            "complications": "Injury during seizures, psychological issues, and social stigma.",
+            "prevention": "Avoiding triggers for seizures, regular medication adherence, and monitoring for potential side effects."
+        },
+        {
+            "name": "lupus",
+            "description": "Lupus is a chronic autoimmune disease where the immune system attacks healthy tissues, causing inflammation and damage to various organs.",
+            "transmission": "Not transmissible; influenced by genetics, hormonal factors, and environmental triggers.",
+            "symptoms": "Fatigue, joint pain, skin rashes, fever, and organ-specific symptoms such as kidney inflammation or heart involvement.",
+            "treatment": "Medications to control inflammation and immune response (e.g., corticosteroids, immunosuppressants), lifestyle changes, and supportive care.",
+            "complications": "Organ damage, increased risk of infections, and cardiovascular issues.",
+            "prevention": "There is no known prevention, but managing symptoms and avoiding triggers can help control the disease."
+        },
+        {
+            "name": "crohns disease",
+            "description": "Crohn's disease is a type of inflammatory bowel disease (IBD) that causes chronic inflammation in the gastrointestinal tract, potentially leading to severe complications.",
+            "transmission": "Not transmissible; influenced by genetic, environmental factors, and immune system dysfunction.",
+            "symptoms": "Diarrhea, abdominal pain, weight loss, anemia, fatigue, and sometimes fistulas or abscesses.",
+            "treatment": "Medications to reduce inflammation and manage symptoms, dietary changes, and sometimes surgery for complications or severe cases.",
+            "complications": "Bowel obstruction, malnutrition, and increased risk of colon cancer.",
+            "prevention": "There is no known prevention, but managing symptoms and regular monitoring can help improve quality of life."
+        },
+        {
+            "name": "ulcerative colitis",
+            "description": "Ulcerative colitis is a chronic inflammatory bowel disease (IBD) that causes inflammation and ulcers in the digestive tract, primarily affecting the colon and rectum.",
+            "transmission": "Not transmissible; influenced by genetics, immune system dysfunction, and environmental factors.",
+            "symptoms": "Diarrhea, abdominal pain, rectal bleeding, weight loss, and sometimes fever or joint pain.",
+            "treatment": "Medications to control inflammation and manage symptoms, dietary changes, and sometimes surgery (e.g., colectomy) for severe cases.",
+            "complications": "Colon cancer, bowel perforation, and severe dehydration.",
+            "prevention": "There is no known prevention, but early treatment and regular monitoring can help manage the disease."
+        },
+        {
+            "name": "celiac disease",
+            "description": "Celiac disease is an autoimmune disorder triggered by ingestion of gluten, leading to inflammation and damage to the small intestine.",
+            "transmission": "Not transmissible; influenced by genetics and possibly environmental factors.",
+            "symptoms": "Diarrhea, bloating, gas, fatigue, anemia, and weight loss. Some individuals may experience neurological symptoms or skin rashes.",
+            "treatment": "A strict lifelong gluten-free diet to manage symptoms and promote healing of the intestine.",
+            "complications": "Nutritional deficiencies, osteoporosis, infertility, and an increased risk of other autoimmune diseases.",
+            "prevention": "There is no known prevention, but early diagnosis and adherence to a gluten-free diet are crucial for managing the condition."
+        },
+        {
+            "name": "sickle cell disease",
+            "description": "Sickle cell disease is a genetic blood disorder characterized by abnormally shaped red blood cells that can block blood flow and cause pain.",
+            "transmission": "Genetic inheritance; both parents must carry the sickle cell trait for a child to inherit the disease.",
+            "symptoms": "Anemia, episodes of pain (sickle cell crises), swelling of hands and feet, frequent infections, delayed growth, and fatigue.",
+            "treatment": "Medications to manage pain and prevent complications, blood transfusions, and sometimes bone marrow transplant.",
+            "complications": "Painful episodes, infections, stroke, and organ damage.",
+            "prevention": "Genetic counseling and newborn screening can help with early detection and management."
+        },
+        {
+            "name": "hemophilia",
+            "description": "Hemophilia is a rare genetic disorder where the blood does not clot properly due to insufficient clotting proteins.",
+            "transmission": "Genetic inheritance; it is typically inherited in an X-linked recessive pattern.",
+            "symptoms": "Excessive bleeding, easy bruising, joint pain, and spontaneous bleeding, especially into the joints or muscles.",
+            "treatment": "Replacement therapy with clotting factor concentrates, and sometimes preventive measures to reduce bleeding episodes.",
+            "complications": "Joint damage, bleeding into organs, and prolonged bleeding from injuries.",
+            "prevention": "Regular infusion of clotting factors and avoiding activities that increase bleeding risk."
+        },
+        {
+            "name": "anemia",
+            "description": "Anemia is a condition where there are insufficient healthy red blood cells to carry adequate oxygen to the body's tissues.",
+            "transmission": "Not transmissible; can be caused by a variety of factors including nutritional deficiencies, chronic diseases, and genetic disorders.",
+            "symptoms": "Fatigue, weakness, pale skin, shortness of breath, dizziness, and sometimes chest pain.",
+            "treatment": "Dietary changes, iron supplements, vitamin B12 or folic acid supplements, medications, and sometimes blood transfusions.",
+            "complications": "Severe anemia can lead to heart problems, delayed development in children, and decreased quality of life.",
+            "prevention": "Adequate intake of essential nutrients, managing chronic conditions, and regular medical check-ups."
+        },
+        {
+            "name": "psoriasis",
+            "description": "Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches. It can also affect the nails and joints.",
+            "transmission": "Not transmissible; influenced by genetics, immune system dysfunction, and environmental factors.",
+            "symptoms": "Red patches of skin covered with thick, silvery scales, dry, cracked skin that may bleed, itching or burning, and sometimes joint pain (psoriatic arthritis).",
+            "treatment": "Topical treatments (e.g., corticosteroids), phototherapy, systemic medications (e.g., methotrexate), and lifestyle changes.",
+            "complications": "Increased risk of infections, joint pain (psoriatic arthritis), and decreased quality of life.",
+            "prevention": "There is no known prevention, but managing symptoms and avoiding triggers can help control the condition."
+        }
+        ]
+    },
+
+    {
+        "name": "infectious diseases",
+        "diseases": [
+            {
+                "name": "influenza",
+                "description": "Influenza, commonly known as the flu, is a viral infection that attacks the respiratory system. It is caused by influenza viruses.",
+                "transmission": "Airborne droplets when an infected person coughs, sneezes, or talks. It can also spread through contact with contaminated surfaces and then touching the face.",
+                "symptoms": "Fever, chills, muscle aches, cough, congestion, runny nose, headaches, and fatigue. Some people may experience gastrointestinal symptoms like nausea and vomiting.",
+                "treatment": "Antiviral medications such as oseltamivir (Tamiflu) and zanamivir (Relenza) can help reduce the severity and duration of symptoms if taken early. Rest, hydration, and over-the-counter medications for symptom relief are also recommended.",
+                "prevention": "Annual flu vaccination, good hygiene practices such as hand washing, and avoiding close contact with infected individuals.",
+                "complications": "Pneumonia, bronchitis, sinus infections, and exacerbation of chronic illnesses such as asthma or chronic obstructive pulmonary disease (COPD)."
+            },
+            {
+                "name": "covid-19",
+                "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It can range from mild symptoms to severe respiratory distress and has led to a global pandemic.",
+                "transmission": "Spread through respiratory droplets from coughs, sneezes, or talking. It can also be transmitted by touching surfaces contaminated with the virus and then touching the face.",
+                "symptoms": "Fever, cough, difficulty breathing, fatigue, and loss of taste or smell. Severe cases may involve respiratory distress, chest pain, confusion, and bluish lips or face.",
+                "treatment": "Supportive care including oxygen therapy for severe cases. Antiviral medications such as remdesivir and corticosteroids like dexamethasone can be used for severe cases. Vaccination is key to preventing severe disease.",
+                "prevention": "Vaccination, wearing masks, practicing social distancing, hand hygiene, and avoiding large gatherings.",
+                "complications": "Acute respiratory distress syndrome (ARDS), multi-organ failure, cardiovascular complications, neurological effects, and long-term symptoms (long COVID)."
+            },
+            {
+                "name": "tuberculosis",
+                "description": "Tuberculosis (TB) is a potentially serious infectious disease that mainly affects the lungs but can also impact other parts of the body.",
+                "transmission": "Airborne when an infected person coughs or sneezes. It can also be transmitted through close contact with an infectious individual.",
+                "symptoms": "Coughing that lasts three or more weeks, coughing up blood, chest pain, weight loss, night sweats, and fever. Some may experience fatigue and loss of appetite.",
+                "treatment": "Long-term antibiotics treatment, typically for 6-9 months. Common regimens include isoniazid, rifampin, ethambutol, and pyrazinamide.",
+                "prevention": "Vaccination with the BCG vaccine in high-risk areas, early detection and treatment of active TB cases, and proper ventilation in living spaces.",
+                "complications": "Drug-resistant TB, lung damage, and in severe cases, extrapulmonary TB affecting other organs such as kidneys, spine, or brain."
+            },
+            {
+                "name": "hepatitis B",
+                "description": "Hepatitis B is a serious liver infection caused by the hepatitis B virus (HBV). It can cause chronic liver disease and increase the risk of liver cancer.",
+                "transmission": "Contact with infectious body fluids, such as blood, semen, and vaginal fluids. It can also be transmitted from mother to child during birth, through unprotected sex, and sharing needles.",
+                "symptoms": "Yellowing of the eyes (jaundice), abdominal pain, dark urine, fatigue, and nausea. Chronic cases may lead to liver cirrhosis or cancer.",
+                "treatment": "Antiviral medications such as tenofovir and entecavir. In severe cases, a liver transplant may be necessary.",
+                "prevention": "Hepatitis B vaccination, avoiding sharing needles, practicing safe sex, and ensuring blood products are screened.",
+                "complications": "Chronic liver disease, cirrhosis, liver failure, and liver cancer."
+            },
+            {
+                "name": "malaria",
+                "description": "Malaria is a life-threatening disease caused by Plasmodium parasites, transmitted through the bites of infected Anopheles mosquitoes.",
+                "transmission": "Bites from infected Anopheles mosquitoes. It can also be transmitted through blood transfusions, organ transplants, or from mother to child during pregnancy.",
+                "symptoms": "High fever, chills, sweating, headache, muscle and joint pain, nausea, vomiting, and fatigue. Severe cases can lead to complications such as anemia and organ failure.",
+                "treatment": "Antimalarial medications such as chloroquine, artemisinin-based combination therapies (ACTs), and quinine. Treatment should be initiated as soon as possible to prevent complications.",
+                "prevention": "Use of insect repellent, bed nets, antimalarial medications, and eliminating mosquito breeding sites.",
+                "complications": "Severe anemia, cerebral malaria, organ failure, and death."
+            },
+            {
+                "name": "measles",
+                "description": "Measles is a highly contagious viral disease characterized by a distinctive red rash and flu-like symptoms.",
+                "transmission": "Airborne droplets from coughs and sneezes of infected individuals. It can also spread through contact with contaminated surfaces.",
+                "symptoms": "Fever, dry cough, runny nose, inflamed eyes, sore throat, and a red, blotchy skin rash that usually starts on the face and spreads downward. Koplik spots may appear inside the mouth.",
+                "treatment": "Supportive care including rest, fluids, and pain relievers. Vitamin A supplementation may be used to reduce complications.",
+                "prevention": "Vaccination with the MMR (measles, mumps, rubella) vaccine, maintaining good hygiene, and avoiding contact with infected individuals.",
+                "complications": "Diarrhea, ear infections, pneumonia, encephalitis, and long-term complications such as subacute sclerosing panencephalitis (SSPE)."
+            },
+            {
+                "name": "chickenpox",
+                "description": "Chickenpox is a highly contagious viral infection that causes an itchy rash and flu-like symptoms.",
+                "transmission": "Direct contact with the rash or through airborne transmission of respiratory droplets from an infected person.",
+                "symptoms": "Itchy rash that progresses from red spots to fluid-filled blisters, fever, tiredness, loss of appetite, and headache.",
+                "treatment": "Antiviral medication such as acyclovir for severe cases, calamine lotion, oatmeal baths, and antihistamines to relieve itching.",
+                "prevention": "Vaccination with the varicella vaccine, avoiding contact with infected individuals, and practicing good hygiene.",
+                "complications": "Bacterial skin infections, pneumonia, encephalitis, and in rare cases, severe complications such as varicella pneumonia or hepatitis."
+            },
+            {
+                "name": "mumps",
+                "description": "Mumps is a viral infection that primarily affects the salivary glands, causing swelling and pain.",
+                "transmission": "Spread through infected saliva via coughing, sneezing, or sharing utensils.",
+                "symptoms": "Swollen and painful salivary glands (usually parotid glands), fever, headache, muscle aches, fatigue, and loss of appetite.",
+                "treatment": "Supportive care including rest, fluids, and pain relievers. In severe cases, complications such as meningitis or orchitis may require additional treatment.",
+                "prevention": "Vaccination with the MMR (measles, mumps, rubella) vaccine and avoiding contact with infected individuals.",
+                "complications": "Orchitis (inflammation of the testicles), oophoritis (inflammation of the ovaries), meningitis, and hearing loss."
+            },
+            {
+                "name": "rubella",
+                "description": "Rubella, also known as German measles, is a contagious viral infection characterized by a rash and mild fever.",
+                "transmission": "Airborne droplets from coughs and sneezes of infected individuals. It can also be transmitted from mother to fetus during pregnancy.",
+                "symptoms": "Mild fever, headache, red eyes, and a fine, pink rash that starts on the face and spreads to the rest of the body. Lymphadenopathy may also occur.",
+                "treatment": "Supportive care including rest, fluids, and pain relievers. Rubella is generally mild but can cause serious birth defects if contracted during pregnancy.",
+                "prevention": "Vaccination with the MMR (measles, mumps, rubella) vaccine, and avoiding contact with infected individuals. Pregnant women should ensure they are immune before conception.",
+                "complications": "Congenital rubella syndrome in the fetus, which can lead to heart defects, developmental delays, and vision and hearing problems."
+            },
+            {
+                "name": "dengue fever",
+                "description": "Dengue fever is a mosquito-borne tropical disease caused by the dengue virus, characterized by high fever and severe muscle pain.",
+                "transmission": "Bites from infected Aedes mosquitoes, particularly Aedes aegypti.",
+                "symptoms": "High fever, severe headaches, retro-orbital pain, joint and muscle pain, rash, nausea, and vomiting. Severe cases can progress to dengue hemorrhagic fever or dengue shock syndrome.",
+                "treatment": "Supportive care including hydration and pain management. Severe cases may require hospitalization and intravenous fluid therapy.",
+                "prevention": "Use of mosquito repellent, wearing protective clothing, and eliminating mosquito breeding sites.",
+                "complications": "Dengue hemorrhagic fever, dengue shock syndrome, organ failure, and death."
+            }
+        ]
+    },
+    {
+        "name": "non-infectious diseases",
+        "diseases": [
+            {
+                "name": "diabetes mellitus",
+                "description": "Diabetes mellitus is a group of metabolic disorders characterized by high blood sugar levels over a prolonged period due to inadequate insulin production or response.",
+                "transmission": "Not directly transmitted; genetic and lifestyle factors play a role. Type 1 diabetes is usually autoimmune, while Type 2 diabetes is associated with lifestyle factors.",
+                "symptoms": "Increased thirst, frequent urination, extreme fatigue, blurred vision, and slow wound healing. Type 1 diabetes may present with sudden symptoms, while Type 2 symptoms develop gradually.",
+                "treatment": "Management includes lifestyle changes such as diet and exercise, and medications including insulin injections or oral hypoglycemics. Monitoring blood glucose levels is essential.",
+                "prevention": "Healthy lifestyle choices including a balanced diet, regular physical activity, and maintaining a healthy weight. Type 1 diabetes cannot be prevented, but Type 2 diabetes can be managed with lifestyle changes.",
+                "complications": "Cardiovascular disease, neuropathy, nephropathy, retinopathy, and increased risk of infections."
+            },
+            {
+                "name": "hypertension",
+                "description": "Hypertension, or high blood pressure, is a chronic condition where the blood pressure in the arteries is persistently elevated, increasing the risk of heart disease and stroke.",
+                "transmission": "Not directly transmitted; genetic, environmental, and lifestyle factors contribute. Risk factors include obesity, high salt intake, lack of physical activity, and stress.",
+                "symptoms": "Often asymptomatic, but severe cases may cause headaches, shortness of breath, and nosebleeds. Long-term uncontrolled hypertension can lead to serious health issues.",
+                "treatment": "Lifestyle changes such as reducing salt intake, increasing physical activity, and managing stress. Medications like ACE inhibitors, beta-blockers, and diuretics may be prescribed.",
+                "prevention": "Healthy lifestyle choices including a balanced diet, regular exercise, and avoiding excessive alcohol and smoking. Regular blood pressure monitoring is also important.",
+                "complications": "Heart attack, stroke, heart failure, kidney damage, and vision loss."
+            },
+            {
+                "name": "asthma",
+                "description": "Asthma is a chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to breathing difficulties.",
+                "transmission": "Not directly transmitted; genetic and environmental factors contribute. Triggers include allergens, respiratory infections, smoke, and environmental pollutants.",
+                "symptoms": "Wheezing, shortness of breath, chest tightness, and coughing, particularly at night or early in the morning. Symptoms can vary in frequency and severity.",
+                "treatment": "Medications include inhaled corticosteroids, bronchodilators, and leukotriene modifiers. Avoiding triggers and using rescue inhalers as needed are also important.",
+                "prevention": "Avoidance of known triggers, regular use of prescribed medications, and monitoring symptoms. Managing allergies and avoiding smoking or exposure to secondhand smoke are also important.",
+                "complications": "Severe asthma attacks, respiratory infections, and decreased lung function."
+            },
+            {
+                "name": "arthritis",
+                "description": "Arthritis is a group of disorders affecting the joints, causing pain, swelling, and stiffness. It can impact mobility and quality of life.",
+                "transmission": "Not directly transmitted; genetic, environmental, and autoimmune factors contribute. Osteoarthritis is related to joint wear and tear, while rheumatoid arthritis is an autoimmune condition.",
+                "symptoms": "Joint pain, stiffness, swelling, and decreased range of motion. Symptoms may worsen with activity and improve with rest. Inflammatory types of arthritis may also cause systemic symptoms like fatigue.",
+                "treatment": "Management includes pain relief medications, anti-inflammatory drugs, physical therapy, and lifestyle changes such as weight management. In severe cases, surgery may be required.",
+                "prevention": "Maintaining a healthy weight, regular exercise, and joint protection strategies. Early diagnosis and management of symptoms can also help prevent progression.",
+                "complications": "Joint damage, decreased mobility, and disability. In severe cases, systemic effects such as cardiovascular disease may occur."
+            },
+            {
+                "name": "cancer",
+                "description": "Cancer is a broad group of diseases characterized by uncontrolled cell growth and spread to other parts of the body.",
+                "transmission": "Not directly transmitted; genetic mutations and environmental factors contribute. Risk factors include smoking, excessive alcohol consumption, poor diet, and exposure to carcinogens.",
+                "symptoms": "Varies depending on the type and stage of cancer but may include unexplained weight loss, persistent pain, abnormal bleeding, and changes in bowel or urinary habits.",
+                "treatment": "Includes surgery, radiation therapy, chemotherapy, targeted therapy, and immunotherapy. Treatment plans depend on the type, location, and stage of cancer.",
+                "prevention": "Avoiding known risk factors, regular screenings, maintaining a healthy lifestyle, and vaccinations for certain types of cancer (e.g., HPV vaccine).",
+                "complications": "Metastasis to other organs, treatment-related side effects, and long-term health issues related to cancer or its treatment."
+            },
+            {
+                "name": "cardiovascular disease",
+                "description": "Cardiovascular disease encompasses a range of conditions affecting the heart and blood vessels, including coronary artery disease, heart failure, and stroke.",
+                "transmission": "Not directly transmitted; genetic and lifestyle factors play a role. Risk factors include hypertension, high cholesterol, smoking, and diabetes.",
+                "symptoms": "Chest pain, shortness of breath, dizziness, and fatigue. Symptoms may vary depending on the specific condition and its severity.",
+                "treatment": "Management includes lifestyle changes such as a healthy diet, regular exercise, and medications like statins and antihypertensives. In some cases, procedures such as angioplasty or surgery may be needed.",
+                "prevention": "Healthy lifestyle choices, regular health check-ups, and managing risk factors such as high blood pressure and cholesterol levels.",
+                "complications": "Heart attack, stroke, heart failure, and sudden cardiac arrest."
+            },
+            {
+                "name": "chronic obstructive pulmonary disease (COPD)",
+                "description": "COPD is a group of progressive lung diseases that cause breathing difficulties, including emphysema and chronic bronchitis.",
+                "transmission": "Not directly transmitted; primarily caused by long-term exposure to irritating substances such as cigarette smoke and air pollution.",
+                "symptoms": "Chronic cough, mucus production, shortness of breath, wheezing, and chest tightness. Symptoms typically worsen over time.",
+                "treatment": "Management includes smoking cessation, medications such as bronchodilators and corticosteroids, and pulmonary rehabilitation. Oxygen therapy may be required for severe cases.",
+                "prevention": "Avoiding smoking and exposure to pollutants, maintaining a healthy lifestyle, and managing respiratory infections promptly.",
+                "complications": "Respiratory infections, lung cancer, heart problems, and exacerbations leading to decreased lung function."
+            },
+            {
+                "name": "multiple sclerosis (MS)",
+                "description": "Multiple sclerosis is a chronic autoimmune disease that affects the central nervous system, leading to a range of neurological symptoms.",
+                "transmission": "Not directly transmitted; believed to involve genetic, environmental, and immune system factors. Some viruses may trigger MS in genetically predisposed individuals.",
+                "symptoms": "Varies widely but may include vision problems, muscle weakness, difficulty with coordination and balance, numbness or tingling, and cognitive changes.",
+                "treatment": "Medications to modify the course of the disease, manage symptoms, and address relapses. Physical therapy and occupational therapy can help with symptom management.",
+                "prevention": "Currently, no known prevention. Early diagnosis and treatment can help manage symptoms and slow disease progression.",
+                "complications": "Mobility issues, cognitive impairment, and severe disability in advanced stages."
+            },
+            {
+                "name": "Parkinson's disease",
+                "description": "Parkinson's disease is a progressive neurodegenerative disorder that affects movement control due to the loss of dopamine-producing neurons in the brain.",
+                "transmission": "Not directly transmitted; genetic and environmental factors may contribute. Some cases have a hereditary component, but many do not.",
+                "symptoms": "Tremors, rigidity, bradykinesia (slowness of movement), postural instability, and gait difficulties. Symptoms progress over time and can impact daily activities.",
+                "treatment": "Medications such as levodopa and dopamine agonists to manage symptoms. Physical therapy and occupational therapy can help improve quality of life.",
+                "prevention": "No known prevention; research is ongoing into potential risk factors and preventive measures.",
+                "complications": "Progressive motor impairment, difficulty with balance and coordination, and potential cognitive decline in advanced stages."
+            },
+            {
+                "name": "Alzheimer's disease",
+                "description": "Alzheimer's disease is a progressive neurodegenerative disorder characterized by memory loss, cognitive decline, and behavioral changes.",
+                "transmission": "Not directly transmitted; genetic, environmental, and lifestyle factors play a role. The risk increases with age, and some genetic mutations are associated with early-onset forms.",
+                "symptoms": "Memory loss, difficulty with problem-solving and planning, confusion with time and place, and changes in personality and behavior.",
+                "treatment": "Medications to manage symptoms and support cognitive function. Supportive care, including behavioral therapies and lifestyle modifications, can improve quality of life.",
+                "prevention": "Healthy lifestyle choices, including regular physical exercise, mental stimulation, and a balanced diet, may help reduce the risk.",
+                "complications": "Severe cognitive decline, loss of independence, and behavioral issues. Advanced stages may involve physical decline and increased care needs."
+            }
+        ]
+    }   
+]
+
