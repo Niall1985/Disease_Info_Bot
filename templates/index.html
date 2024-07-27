@@ -1,252 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disease Info Bot</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .header {
-            width: 90vw;
-            max-width: 2000px;
-            padding: 20px;
-            background-color: #ffffff;
-            color: rgb(3, 3, 3);
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 1px solid #0056b3;
-        }
-
-        .chat-box {
-            width: 90vw;
-            max-width: 2000px;
-            height: calc(100vh - 120px);
-            padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #000000;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow-y: auto;
-            margin: 20px 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 80px;
-        }
-
-        .message {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-        .user-query, .bot-response {
-            padding: 12px;
-            border-radius: 8px;
-            max-width: 60%;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            box-sizing: border-box;
-        }
-
-        .user-query {
-            background-color: #5055d6;
-            color: white;
-            align-self: flex-start;
-            text-align: center;
-            margin-right: auto;
-        }
-
-        .bot-response {
-            background-color: #eaeaed;
-            color: #000000;
-            align-self: flex-start;
-            text-align: left;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow-x: auto;
-            margin-left: 15%;
-            max-width: 80%;
-        }
-
-        .form-group {
-            display: flex;
-            align-items: center;
-            width: 90vw;
-            max-width: 1500px;
-            padding: 0 20px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: #ffffff;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .query-field {
-            flex: 1;
-            margin-right: 10px;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-sizing: border-box;
-            background-color: #f9f9f9;
-            margin-bottom: 1.5%;
-        }
-
-        button {
-            padding: 12px 24px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            margin-bottom: 1.5%;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        .loading-indicator {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-            font-size: 16px;
-        }
-
-        .dots {
-            display: flex;
-            margin-left: 10px;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            background-color: black;
-            border-radius: 50%;
-            margin: 0 3px;
-            animation: blink 1.5s infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 0.2; }
-            50% { opacity: 1; }
-            100% { opacity: 0.2; }
-        }
-    </style>
-</head>
-<body>
-    <div class="header">Disease Info Bot</div>
-
-    <div class="chat-box" id="chat-box">
-        {% for entry in chat_history %}
-            <div class="message">
-                <div class="user-query">
-                    <pre>{{ entry.query }}</pre>
-                </div>
-                {% if entry.response %}
-                    <div class="bot-response">
-                        <pre>{{ entry.response }}</pre>
-                    </div>
-                {% endif %}
-            </div>
-        {% endfor %}
-        <div id="loading-indicator" class="loading-indicator" style="display: none;">
-            <span>Generating response</span>
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <form id="query-form" method="post">
-        <div class="form-group">
-            <input type="text" name="query" id="query-field" class="query-field" placeholder="Enter your query..." required>
-            <button type="submit">Submit</button>
-        </div>
-    </form>
-
-    <script>
-        document.getElementById('query-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-    
-            const queryField = document.getElementById('query-field');
-            const query = queryField.value;
-            const chatBox = document.getElementById('chat-box');
-            const loadingIndicator = document.getElementById('loading-indicator');
-    
-            // Display user's query immediately
-            const userMessage = document.createElement('div');
-            userMessage.className = 'message';
-            userMessage.innerHTML = `
-                <div class="user-query">
-                    <pre>${query}</pre>
-                </div>
-            `;
-            chatBox.appendChild(userMessage);
-    
-    
-            loadingIndicator.style.display = 'flex';
-    
-
-            queryField.value = '';
-    
-
-            fetch('{{ url_for("index") }}', {  
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ query: query })
-            })
-            .then(response => response.json())
-            .then(data => {
-                const botMessage = document.createElement('div');
-                botMessage.className = 'message';
-                botMessage.innerHTML = `
-                    <div class="bot-response">
-                        <pre>${data.response}</pre>
-                    </div>
-                `;
-                chatBox.appendChild(botMessage);
-
-
-                loadingIndicator.style.display = 'none';
-                chatBox.scrollTop = chatBox.scrollHeight; 
-            })
-            .catch(error => {
-                console.error('Error:', error);
-
-                loadingIndicator.style.display = 'none';
-            });
-        });
-    </script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -400,11 +151,23 @@
             50% { opacity: 1; }
             100% { opacity: 0.2; }
         }
+        /* .aside {
+            margin-left: 15px;
+            float: left;
+            color: black;
+            width: 30px;
+            height: 100px;
+            background-color: #007bff;
+        } */
     </style>
 </head>
 <body>
     <div class="header">Disease Info Bot</div>
-
+    <!-- <div class = "aside" id="aside">
+        <aside>
+            <p>Heheh bro</p>
+        </aside>
+    </div> -->
     <div class="chat-box" id="chat-box">
         {% for entry in chat_history %}
             <div class="message">
