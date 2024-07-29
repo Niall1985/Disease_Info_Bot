@@ -70,6 +70,39 @@ Additional Information:
 {additional_content}
 """
 
+# @app.route('/', methods=['GET', 'POST'])
+# def index():
+#     global chat_history
+#     user_query = None
+#     result = None
+#     waiting = False
+
+#     if request.method == 'POST':
+#         data = request.json
+#         user_query = data.get('query', '').strip()
+#         prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+
+#         waiting = True
+#         reply = generate_extract_disease_name(prompt)
+#         disease_info = get_disease_info(reply)
+        
+#         if disease_info:
+#             additional_prompt = f"Provide more information about risk factors and diagnosis of {user_query} in the format Risk Factors: (content) and on the next line Diagnosis: (content)."
+#             additional_content = generate_additional_content(additional_prompt)
+#             result = formatted_result(disease_info, additional_content)
+
+#         waiting = False
+
+#         # Add new query and response to chat history
+#         chat_history.append({'query': user_query, 'response': result})
+
+#         return jsonify({'response': result})
+
+#     return render_template('index.html', chat_history=chat_history, waiting=waiting)
+
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     global chat_history
@@ -80,18 +113,66 @@ def index():
     if request.method == 'POST':
         data = request.json
         user_query = data.get('query', '').strip()
-        prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
 
-        waiting = True
-        reply = generate_extract_disease_name(prompt)
-        disease_info = get_disease_info(reply)
-        
-        if disease_info:
-            additional_prompt = f"Provide more information about risk factors and diagnosis of {user_query} in the format Risk Factors: (content) and on the next line Diagnosis: (content)."
-            additional_content = generate_additional_content(additional_prompt)
-            result = formatted_result(disease_info, additional_content)
-
-        waiting = False
+        if 'symptoms' in user_query.lower():
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            disease_name = generate_extract_disease_name(prompt)
+            # disease_name = get_disease_info(result)
+            # print(disease_name)
+            disease_info = get_disease_info(disease_name) 
+            if disease_info:
+                result = f"Symptoms of {disease_info['name']}:\n\n{disease_info['symptoms']}"
+            else:
+                result = "Disease not found in the database."
+        elif 'treatments' in user_query.lower():
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            disease_name = generate_extract_disease_name(prompt)
+            disease_info = get_disease_info(disease_name)
+            if disease_info:
+                result = f"treatments of {disease_info['name']}:\n\n{disease_info['treatment']}"
+            else:
+                result = "Disease not found in the database."
+        elif 'complications' in user_query.lower():
+            # disease_name = user_query.lower().split('complications')[-1].strip()
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            disease_name = generate_extract_disease_name(prompt)
+            disease_info = get_disease_info(disease_name)
+            if disease_info:
+                result = f"complications of {disease_info['name']}:\n\n{disease_info['complications']}"
+            else:
+                result = "Disease not found in the database."
+        elif 'transmission' in user_query.lower():
+            # disease_name = user_query.lower().split('transmission')[-1].strip()
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            disease_name = generate_extract_disease_name(prompt)
+            disease_info = get_disease_info(disease_name)
+            if disease_info:
+                result = f"transmission of {disease_info['name']}:\n\n{disease_info['transmission']}"
+            else:
+                result = "Disease not found in the database."
+        elif 'prevention' in user_query.lower():
+            # disease_name = user_query.lower().split('prevention')[-1].strip()
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            disease_name = generate_extract_disease_name(prompt)
+            disease_info = get_disease_info(disease_name)
+            if disease_info:
+                result = f"prevention of {disease_info['name']}:\n\n{disease_info['prevention']}"
+            else:
+                result = "Disease not found in the database."
+        else:
+            prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
+            waiting = True
+            reply = generate_extract_disease_name(prompt)
+            disease_info = get_disease_info(reply)
+            
+            if disease_info:
+                additional_prompt = f"Provide more information about risk factors and diagnosis of {user_query} in the format Risk Factors: (content) and on the next line Diagnosis: (content)."
+                additional_content = generate_additional_content(additional_prompt)
+                result = formatted_result(disease_info, additional_content)
+            else:
+                result = "Disease not found in the database."
+            
+            waiting = False
 
         # Add new query and response to chat history
         chat_history.append({'query': user_query, 'response': result})

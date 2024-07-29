@@ -40,6 +40,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             overflow-y: auto;
+            overflow-x: none;
             margin: 20px 0;
             display: flex;
             flex-direction: column;
@@ -71,6 +72,10 @@
             margin-right: auto;
         }
 
+        pre{
+            text-wrap: wrap;
+        }
+
         .bot-response {
             background-color: #eaeaed;
             color: #000000;
@@ -78,9 +83,11 @@
             text-align: left;
             border: 1px solid #e0e0e0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow-x: auto;
-            margin-left: 15%;
-            max-width: 80%;
+            overflow-x: none;
+            margin-left: 40%;
+            /* margin-right: 10%; */
+            text-wrap:stable;
+            width: 60%;
         }
 
         .form-group {
@@ -151,23 +158,10 @@
             50% { opacity: 1; }
             100% { opacity: 0.2; }
         }
-        /* .aside {
-            margin-left: 15px;
-            float: left;
-            color: black;
-            width: 30px;
-            height: 100px;
-            background-color: #007bff;
-        } */
     </style>
 </head>
 <body>
     <div class="header">Disease Info Bot</div>
-    <!-- <div class = "aside" id="aside">
-        <aside>
-            <p>Heheh bro</p>
-        </aside>
-    </div> -->
     <div class="chat-box" id="chat-box">
         {% for entry in chat_history %}
             <div class="message">
@@ -216,11 +210,10 @@
             `;
             chatBox.appendChild(userMessage);
     
-            // Clear the input field
             queryField.value = '';
-    
-            // Send the query to the server
-            fetch('{{ url_for("index") }}', {  // Use the correct endpoint
+
+            // Sends the user's query to the server
+            fetch('{{ url_for("index") }}', {  
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -238,21 +231,21 @@
                 `;
                 chatBox.appendChild(botMessage);
                 
-                // Remove the loading indicator
+                // Removes the loading indicator
                 const loadingIndicator = document.getElementById('loading-indicator');
                 if (loadingIndicator) {
-                    loadingIndicator.style.display = 'none';
+                    loadingIndicator.remove();
                 }
 
-                chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+                chatBox.scrollTop = chatBox.scrollHeight;
             })
             .catch(error => {
                 console.error('Error:', error);
 
-                // Remove the loading indicator in case of an error
+                // Removes the loading indicator if there's an error
                 const loadingIndicator = document.getElementById('loading-indicator');
                 if (loadingIndicator) {
-                    loadingIndicator.style.display = 'none';
+                    loadingIndicator.remove();
                 }
             });
         });
