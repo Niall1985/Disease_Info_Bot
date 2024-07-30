@@ -8,7 +8,6 @@ import os
 load_dotenv()
 key = os.getenv('key')
 
-# Configure Generative AI model
 genai.configure(api_key=key)
 model = genai.GenerativeModel(model_name="gemini-pro")
 
@@ -18,7 +17,6 @@ with open('disease_database.json', 'r') as file:
 
 app = Flask(__name__, static_folder='static')
 
-# Initialize chat history
 chat_history = []
 
 def get_disease_info(disease_name):
@@ -70,39 +68,6 @@ Additional Information:
 {additional_content}
 """
 
-# @app.route('/', methods=['GET', 'POST'])
-# def index():
-#     global chat_history
-#     user_query = None
-#     result = None
-#     waiting = False
-
-#     if request.method == 'POST':
-#         data = request.json
-#         user_query = data.get('query', '').strip()
-#         prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
-
-#         waiting = True
-#         reply = generate_extract_disease_name(prompt)
-#         disease_info = get_disease_info(reply)
-        
-#         if disease_info:
-#             additional_prompt = f"Provide more information about risk factors and diagnosis of {user_query} in the format Risk Factors: (content) and on the next line Diagnosis: (content)."
-#             additional_content = generate_additional_content(additional_prompt)
-#             result = formatted_result(disease_info, additional_content)
-
-#         waiting = False
-
-#         # Add new query and response to chat history
-#         chat_history.append({'query': user_query, 'response': result})
-
-#         return jsonify({'response': result})
-
-#     return render_template('index.html', chat_history=chat_history, waiting=waiting)
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     global chat_history
@@ -117,8 +82,6 @@ def index():
         if 'symptoms' in user_query.lower():
             prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
             disease_name = generate_extract_disease_name(prompt)
-            # disease_name = get_disease_info(result)
-            # print(disease_name)
             disease_info = get_disease_info(disease_name) 
             if disease_info:
                 result = f"Symptoms of {disease_info['name']}:\n\n{disease_info['symptoms']}"
@@ -133,7 +96,6 @@ def index():
             else:
                 result = "Disease not found in the database."
         elif 'complications' in user_query.lower():
-            # disease_name = user_query.lower().split('complications')[-1].strip()
             prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
             disease_name = generate_extract_disease_name(prompt)
             disease_info = get_disease_info(disease_name)
@@ -142,7 +104,6 @@ def index():
             else:
                 result = "Disease not found in the database."
         elif 'transmission' in user_query.lower():
-            # disease_name = user_query.lower().split('transmission')[-1].strip()
             prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
             disease_name = generate_extract_disease_name(prompt)
             disease_info = get_disease_info(disease_name)
@@ -151,7 +112,6 @@ def index():
             else:
                 result = "Disease not found in the database."
         elif 'prevention' in user_query.lower():
-            # disease_name = user_query.lower().split('prevention')[-1].strip()
             prompt = f"Extract the disease name from the following text and return only the disease name in lowercase: '{user_query}'"
             disease_name = generate_extract_disease_name(prompt)
             disease_info = get_disease_info(disease_name)
