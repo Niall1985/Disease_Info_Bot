@@ -128,7 +128,7 @@ def index():
             if disease_info:
                 additional_prompt = f"Provide more information about risk factors and diagnosis of {user_query} in the format Risk Factors: (content) and on the next line Diagnosis: (content)."
                 additional_content = generate_additional_content(additional_prompt)
-                result = formatted_result(disease_info, additional_content)
+                result = formatted_result(disease_info, additional_content.replace('*', '').replace('**',''))
             else:
                 result = "Disease not found in the database."
             
