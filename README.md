@@ -1,6 +1,6 @@
 # Disease Info Bot
 
-**Disease Info Bot** is a Flask-based web application that provides detailed information about various diseases. The bot interacts with users via natural language queries and extracts relevant disease information, such as symptoms, treatments, complications, transmission, and prevention, from a JSON-based disease database. The program also uses  Google's generative AI (Gemini Pro) to generate additional content relavant to the query.
+**Disease Info Bot** is a Flask-based web application that provides detailed information about various diseases. The bot interacts with users via natural language queries and extracts relevant disease information, such as symptoms, treatments, complications, transmission, and prevention, from a JSON-based disease database. The program also uses  Google's generative AI (Gemini Pro) to generate additional content relevant to the query.
 
 ## Features
 
